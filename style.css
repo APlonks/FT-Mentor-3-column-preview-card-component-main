@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("font/Lexend_Deca/lexenddeca-regular-webfont.woff")format('woff');
+    src: url("font/Lexend_Deca/lexenddeca-regular-webfont.woff2")format('woff2');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("font/Big_Shoulders_Display/bigshouldersdisplay-bold-webfont.woff")format('woff');
+    src: url("font/Big_Shoulders_Display/bigshouldersdisplay-bold-webfont.woff2")format('woff2');
+    font-weight: normal;
+    font-size: normal;
+}
+
+*{
+    font-family: "Lexend Deca";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.box1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.box2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.box3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.box{
+    height: auto;
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.icone{
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 30px 0px;
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+button{
+    all: unset;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    padding : 15px;
+    width: 120px;
+    text-align: center;
+}
+
+button:hover{
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.button-Sedans{
+    color: hsl(31, 77%, 52%);
+}
+
+.button-SUVs{
+    color: hsl(184, 100%, 22%);
+}
+
+.button-Luxury{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    margin: 20px 0px;
+    color: black;
+    font-size: 15px;
+}
+
+@media screen and (max-width : 880px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px;
+    }
+
+    p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .box1{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .box3{
+        border-radius: 0px 0px 10px 10px;
+    }
+}
